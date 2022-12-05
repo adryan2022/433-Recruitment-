@@ -18,10 +18,9 @@ body {
 }
 
 .wrapper {
-    width: 1200px;
-    margin: 0 auto;
-    align-items: center;
-    align-content: center;
+   margin: 0 auto;
+   width:100%;
+   padding-left: 3rem;
 }
 
 nav {
@@ -30,10 +29,12 @@ align-items: center;
 justify-content: space-between;
 height: 72px;
 align-content: center;
+padding: 20px 30px ;
 }
 
 nav ul {
     display: flex;
+    width: 50%;
 
 }
 
@@ -56,7 +57,6 @@ nav .logo {
 .nav-items li a {
     color: #FFFFFF;
     font-size: 16px;
-    font-family:'Poppins';
     text-decoration: none;
 }
 
@@ -66,9 +66,10 @@ nav .logo {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 36.46%, rgba(0, 0, 0, 0.58) 80.21%, #000000 100%), url(images/Hero\ Background.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     display: flex;
-    height: 760px;
+    height: 100vh;
+    width:100%;
     align-items: center;
 
 }
@@ -96,7 +97,6 @@ nav .logo {
 }
 
 .hero-content h2 {
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
@@ -162,8 +162,9 @@ nav .logo {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    height: 680px;
-    align-items: center;
+    height:750px;
+  
+
 }
 .picture-container picture1{
     position: absolute;
@@ -294,14 +295,31 @@ footer a:hover{
 
 /* progress bar section */
 
-.progressbar{
-    counter-reset: step;
-    margin-top: 40px;
-    align-content: center;
-    display: flow-root;
+.progressbar-wrapper{
+    width: 100%;
+    display:flex;
+    justify-content: center;
 }
 
-.progressbar li{
+.progressbar{
+    counter-reset: step;
+    margin-top: 20px;
+    align-content: center;
+    display: flow-root;
+    display: flex;
+    align-items: center;
+    width: 50%;
+
+}
+
+.line{
+    width: 200px;
+    height:2px;
+    background-color: #FFFF00;
+
+}
+
+.progressbar .progress-item{
     list-style-type:none ;
     float: left;
     width: 33.33%;
@@ -312,7 +330,7 @@ footer a:hover{
     
 }
 
-.progressbar li:before{
+.progressbar .progress-item:before{
     content: counter(step);
     counter-increment: step;
     width: 30px;
@@ -326,7 +344,7 @@ footer a:hover{
     background-color: rgb(0, 0, 0);
 }
 
-.progressbar li:after{
+.progressbar .progress-item:after{
     content: '';
     position: absolute;
     width: 100%;
@@ -338,16 +356,16 @@ footer a:hover{
 
 }
 
-.progressbar li:first-child:after{
+.progressbar .progress-item:first-child:after{
     content: none;
 }
 
-.progressbar li.active{
+.progressbar .progress-item.active{
     color: #FFFF00;
 }
 
 
-.progressbar li:before{
+.progressbar .progress-item:before{
     border-color: yellow;
 }
 /* Form section */
@@ -356,7 +374,7 @@ footer a:hover{
     margin-bottom: 200px;
 }
 .form-title{
-    margin-top: 40px;
+    /* margin-top: 40px;
     font-weight: 800;
     font-size: 30px;
     line-height: 60px;
@@ -364,6 +382,23 @@ footer a:hover{
     text-align: center;
     letter-spacing: -0.02em;
     color: #FFFFFF;
+    text-align: center; */
+}
+.form-title h1{
+    color: #FFFFFF;
+    text-align: center;
+    margin:2rem 0 ;
+    width:100%;
+    font-size: 60px;
+
+}
+
+.form-title h1, .hero-title h1{
+    color: #FFFFFF;
+    margin:2rem 0 ;
+    width:100%;
+    font-size: 60px;
+
 }
 
 .form-finish{
@@ -397,10 +432,12 @@ footer a:hover{
 label{
 display: block;
 margin-bottom: 0.5rem;
+margin:1rem  0 1rem 0.3rem
 }
 
 
 input{
+margin: 0.5rem 0 ;
 align-items: center;
 flex-direction: row;
 display: flex;
@@ -408,7 +445,8 @@ width: 100%;
 padding: 0.75rem;
 border: 1px solid #404040;
 border-radius: 64px;
-color: #000000;
+color: white;
+background-color: rgb(175, 175, 175);
 
 }
 
@@ -424,7 +462,7 @@ color: #000000;
 }
 
 .form-stepactive{
-    margin-top: 150px;
+    margin-top:30px;
     margin-bottom: 50px;
     align-items: center;
    
@@ -436,13 +474,20 @@ color: #000000;
 
 .btn {
     margin-top: 24px;
-    padding: 0.75rem;
-    display: block;
+
     text-align: center;
     text-decoration: none;
     border-radius: 64px;
     cursor: pointer;
-    align-content:center ;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.btn a{
+    width:49%
+
 }
 
  .btn-finish{
