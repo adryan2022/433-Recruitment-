@@ -26,9 +26,11 @@ body {
 
 .wrapper1{
     margin: 0 auto;
-   width:100%;
    padding-left: 3rem;
    margin-left: 80px;
+   padding-right: 3rem;
+   margin-right: 80px;
+   line-height: 2;
 }
 
 nav {
@@ -352,28 +354,36 @@ width: 100%;
     color: #ddd;
     display: flex;
     padding: 0 3rem;
+    margin: 0 auto;
+    padding-left: 3rem;
+    margin-left: 80px;
+    padding-right: 3rem;
+    margin-right: 80px;
 }
 
 .studioitem{
     margin: 1rem;
+    opacity: 100;
 }
 
 .studioitem.left{
-    background-image: url(images/Hero\ Background.png);
+    background-image: url(images/PHONE\ 1\ \(2\).png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 480px;
     align-items: center;
+   
 }
 
 .studioitem.right{
-    background-image: url(images/Hero\ Background.png);
+    background-image: url(images/stadium\ 1\ \(2\).png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 480px;
     align-items: center;
+    
 }
 
 /*Footer */
@@ -554,16 +564,16 @@ footer a:hover{
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    height: 360px;
+    height: 300px;
     align-items: center;
-    margin-top: auto;
+    width: auto;
 
 }
 
 label{
 display: block;
 margin-bottom: 0.5rem;
-margin:1rem  0 1rem 0.3rem
+margin: 1rem  0 1rem 0.3rem;
 }
 
 
@@ -589,15 +599,19 @@ background-color: rgb(175, 175, 175);
     color: #FFFFFF;
     align-content: center;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+   
 }
 
 .form-stepactive{
     margin-top:30px;
     margin-bottom: 50px;
     align-items: center;
+    
    
 }
+
+
 
 .input-group{
     margin: 2rem0;
@@ -668,10 +682,10 @@ background-color: rgb(175, 175, 175);
 
 .upload-container{
     align-content: center;
-    margin-left: 550px;
-    margin-top: 150px;
-    margin-bottom: 0px;
-    align-items: center;
+    width: 100%;
+    display: flex;
+    margin-top: 130px;
+    justify-content: space-between;
 }
 
 .upload_hide {
